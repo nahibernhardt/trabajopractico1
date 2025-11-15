@@ -12,7 +12,90 @@ h2 {font-family: 'Arial Black', sans-serif;font-size: 38px;text-align: left;text
 h3 {font-family: 'Arial Black', sans-serif;font-size: 27px;text-align: left;text-decoration: underline;}
 p {font-family: 'Arial Black', sans-serif; font-size: 18px;text-align: left;}
 li{font-family: 'Arial Black', sans-serif;font-size: 18px;text-align: left;}
-img {
+.foto {
     width: 400px;
     height: auto;
+}
+.foto {display:flex;justify-content: flex-end;}
+.aprender{display: flex;justify-content: flex-start;}
+.social-bar {
+  display: flex;
+  gap: 15px; /* espacio entre iconos */
+  justify-content: flex-end;; /* centra la barra */
+  padding: 20px;
+  background-color: #96BCFF; /* color de fondo, opcional */
+}
+
+.social-bar a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.social-bar a img:hover {
+  transform: scale(1.2); /* efecto al pasar el mouse */
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
+.choclo {
+    width: 50px;
+    height: 100px;
+    display: flex;
+  justify-content:flex-start;
+}
+h1 {
+  display: flex;
+justify-content: center;
+}
+header {
+  display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 100px;
+}
+.barra a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.barra a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.barra a:hover img {
+  transform: scale(1.2);
+}
+footer {
+  display: flex;
+align-items: flex-start;
+justify-content: center;
+gap: 100px;
+}
+header, footer {
+  display: flex;
+  flex-wrap: wrap;
 }
