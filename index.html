@@ -6,13 +6,17 @@
     <title>Receta de Humita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script>
+      alert("Bienvenidos a este sitio de cocina que te va a transportar al norte de nuestro país. ¿Estás listo?")
+    </script>
   </head>
+  <body>
   <div class="abajo">
     <header>
       <div class="choclo">
           <img src="./img/choclo.jpg" alt="">
       </div>
-      <h1>Receta de humita en chala</h1>
+      <h1 id="humitas">Receta de humita en chala</h1>
       <div class="social-bar">
     <a href="https://wa.me/+5491122526202" target="_blank" title="WhatsApp">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -30,17 +34,18 @@
     </header>
   </div>
   <nav>
-        <a href="https://www.recetasargentinas.net/humita/" target="_blank" rel="noopener">Humita Tradicional</a>
-        <a href="https://www.recetasargentinas.net/humita-en-olla/" target="_blank" rel="noopener">Humita en Olla</a>
-        <a href="https://www.recetasargentinas.net/humita-saludable/" target="_blank" rel="noopener">Humita Saludable</a>
-        <a href="https://www.recetasargentinas.net/humita-en-chala-con-manteca/" target="_blank" rel="noopener">Humita con Manteca</a>
+      <a href="https://www.recetasargentinas.net/humita/" target="_blank" rel="noopener">Humita Tradicional</a>
+      <a  href="https://www.recetasargentinas.net/humita-en-olla/" target="_blank" rel="noopener">Humita en Olla</a>
+      <a href="https://www.recetasargentinas.net/humita-saludable/" target="_blank" rel="noopener">Humita Saludable</a>
+      <a  href="https://www.recetasargentinas.net/humita-en-chala-con-manteca/" target="_blank" rel="noopener">Humita con Manteca</a>
     </nav>
-  <body>
+<button onclick="oscuro()">Modo Oscuro</button>
     <br>
     <div class="aprender">
-      <p>Hoy vas a aprender a hacer una receta típica del norte del país y riquísima!</p>
-      <p>Y lo mejor es que va a ser mucho mas facil de hacer de lo que pensas!</p>
+      <p id="malo">Hoy vas a aprender a hacer una receta típica del norte del país y riquísima!</p>
+      <p id="papoi">Y lo mejor es que va a ser mucho mas facil de hacer de lo que pensas!</p>
     </div>
+
     <br>
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
@@ -65,23 +70,23 @@
 </div>
   <br>
     <div class="ingredientes">
-      <h3 class="ing">Ingredientes que necesitamos:</h3>
-      <ul>
-        <li>6 choclos</li>
-        <li>2 cucharadas de manteca o grasa</li>
+      <h3 id="lolis" class="ing">Ingredientes que necesitamos:</h3>
+        <ul>
+        <li >6 choclos</li>
+        <li >2 cucharadas de manteca o grasa</li>
         <li>1 cebolla picada</li>
-        <li>100g de queso</li>
-        <li>Sal</li>
-        <li>Pimienta</li>
+        <li >100g de queso</li>
+        <li >Sal</li>
+        <li >Pimienta</li>
         <li>Una pizca de azúcar</li>
       </ul>
     </div>
     <br>
     <div class="preparar">
-      <h3 class="prep">Preparación:</h3>
+      <h3 id="nenu" class="prep">Preparación:</h3>
       <ol>
-        <li>Pelar los choclos y guardar sus hojas (las chalas)</li>
-        <li>Rallar los granos de choclo</li>
+        <li >Pelar los choclos y guardar sus hojas (las chalas)</li>
+        <li >Rallar los granos de choclo</li>
         <li>En una olla, reahogar la cebolla con manteca</li>
         <li>Agregar el choclo, sal, pimienta y una pizca de azúcar a la olla</li>
         <li>Cocinar unos minutos hasta que se espese</li>
@@ -95,16 +100,16 @@
       <img src="./img/humita.jpg" alt="">
     </div>
     <div class="video">
-      <p>Un video por si necesitas ver a alguien cocinando la receta para saber bien algún paso</p>
+      <p id="katy">Un video por si necesitas ver a alguien cocinando la receta para saber bien algún paso</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/co9MDJEyVEs?si=VEdEfFgHUEF8w7A9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <br>
     <div class="receta">
-      <p>Y la receta en otra página.</p>
+      <p id="oli">Y la receta en otra página.</p>
       <a href="https://www.lapaulina.com.ar/es/recetas/humanita-en-chala" target="_blank">Receta de Humita en Chala</a>
     </div>
     <div class="region">
-      <h3 class="reg">La región de la cual es originaria la receta</h3>
+      <h3 id="hoji"class="reg">La región de la cual es originaria la receta</h3>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606197.5619397564!2d-66.09150418892305!3d-28.034337060638116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9425a84f49ae19cf%3A0xe23b1c64d3a49ba5!2sSantiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1760487654938!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819691.1806793902!2d-66.64962114213336!3d-27.02750083573654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942245e9a8094c59%3A0xe9c2852a1c5d0cfd!2zVHVjdW3DoW4!5e0!3m2!1ses-419!2sar!4v1760487402719!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727119.4588337303!2d-68.09719461822625!3d-24.179969682287474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0d2938ead0c7%3A0x8b4a1bd1f6c37998!2sSalta!5e0!3m2!1ses-419!2sar!4v1760487441767!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -114,7 +119,7 @@
    class="whatsapp-float" target="_blank" title="WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:40px; height:40px;">
 </a>
-<h3>Otras recetas similares de la región</h3>
+<h3 id="pichu">Otras recetas similares de la región</h3>
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-3">
@@ -179,10 +184,9 @@
        </a>
      </div>
      <div class="info">
-      <p>Programadora Web</p>
-      <p>Nahiara Bernhardt</p>
+    <button onclick="info()">Información de la desarrolladora</button>
      </div>
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-     </body>
+  <script src="./js/java.js" charset="utf-8"></script> </body>
 </html>

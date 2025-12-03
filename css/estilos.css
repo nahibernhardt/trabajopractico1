@@ -23,7 +23,7 @@ li{font-family: 'Arial Black', sans-serif;font-size: 18px;text-align: left;}
   gap: 15px; /* espacio entre iconos */
   justify-content: flex-end;; /* centra la barra */
   padding: 20px;
-  background-color: #96BCFF; /* color de fondo, opcional */
+  ; /* color de fondo, opcional */
 }
 
 .social-bar a img {
